@@ -23,7 +23,6 @@ pnpm run build
 
 - Chat con IA (OpenAI, Claude, Gemini)
 - Diseño responsive
-- Modo oscuro/claro
 - Arquitectura limpia con TypeScript
 - Base de conocimientos local de Calima
 
