@@ -1,0 +1,54 @@
+{
+  "name": "Turismo AI Integration (React + TS)",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20",
+      "pnpm": "latest"
+    },
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "forwardPorts": [5173,5174],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit"
+        },
+        "files.trimTrailingWhitespace": true,
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "tailwindCSS.experimental.classRegex": [
+          ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+          ["twMerge\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+        ]
+      },
+      "extensions": [
+        // --- CALIDAD DE CÓDIGO & LINTING ---
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "yoavbls.pretty-ts-errors",         // Pretty TypeScript Errors
+        "usernamehw.errorlens",             // Error Lens (Indispensable)
+        "DavidAnson.vscode-markdownlint",   // Markdown Lint
+        "streetsidesoftware.code-spell-checker", // Spell Checker
+        "vivaxy.vscode-conventional-commits",
+
+        // --- REACT & FRONTEND ---
+        "dsznajder.es7-react-js-snippets",  // ES7+ React/Redux
+        "bradlc.vscode-tailwindcss",        // Tailwind CSS IntelliSense
+
+        // --- UTILIDADES ---
+        "oderwat.indent-rainbow",           // Indent Rainbow
+        "vscodevim.vim",                    // Vim (Vi en tu captura que lo usas)
+        "ms-azuretools.vscode-docker",      // Docker
+
+        // --- GIT & IA ---
+        "eamodio.gitlens",                  // GitLens
+        "GitHub.copilot",                   // GitHub Copilot
+        "GitHub.copilot-chat",              // GitHub Copilot Chat
+        "GitHub.vscode-pull-request-github"
+      ]
+    }
+  }
+}
