@@ -59,7 +59,7 @@ export default function AssistantChat() {
             </div>
             <div className="text-3xl font-black text-blue-700 mb-1">22 kts</div>
             <p className="text-sm text-blue-600 font-medium">
-              Condiciones épicas en Entrada 5
+              Condiciones perfectas en Entrada 5
             </p>
             <div className="mt-3 w-full bg-blue-200 h-1.5 rounded-full overflow-hidden">
               <div className="bg-linear-to-r from-blue-500 to-cyan-500 h-full w-[80%]"></div>
