@@ -9,8 +9,8 @@ import {
   Bot,
 } from "lucide-react";
 import { useChatService } from "../../application/useChatService";
-import ChatBubble from "./ChatBubble";
-import SettingsModal from "./SettingsModal";
+import ChatBubble from "../components/ChatBubble";
+import SettingsModal from "../components/SettingsModal";
 
 export default function AssistantChat() {
   const {
@@ -197,20 +197,24 @@ export default function AssistantChat() {
             </h2>
             <div className="space-y-4 text-gray-700">
               <p>
-                Para usar el asistente de manera avanzada con modelos de IA como Claude, Google Gemini u OpenAI,
-                necesitas agregar tu API Key en Configuración.
+                Para usar el asistente de manera avanzada con modelos de IA como
+                Claude, Google Gemini u OpenAI, necesitas agregar tu API Key en
+                Configuración.
               </p>
               <p>
-                No te preocupes: No almaceno tu API Key en ningún lugar del proyecto.
-                Se envía directamente al proveedor del modelo de IA.
+                No te preocupes: No almaceno tu API Key en ningún lugar del
+                proyecto. Se envía directamente al proveedor del modelo de IA.
               </p>
               <p>
-                Si te preocupa el uso de tu API Key, puedes crear una nueva en un modelo gratuito
-                (como Google Gemini) donde no te cobrarán. Después de usar el asistente, puedes eliminarla.
+                Si te preocupa el uso de tu API Key, puedes crear una nueva en
+                un modelo gratuito (como Google Gemini) donde no te cobrarán.
+                Después de usar el asistente, puedes eliminarla.
               </p>
               <p>
-                Este asistente está diseñado para mejorar tu experiencia como visitante del municipio de Calima Darién y el Lago Calima,
-                resolviendo cualquier duda sobre deportes náuticos, cultura, gastronomía y lugares turísticos.
+                Este asistente está diseñado para mejorar tu experiencia como
+                visitante del municipio de Calima Darién y el Lago Calima,
+                resolviendo cualquier duda sobre deportes náuticos, cultura,
+                gastronomía y lugares turísticos.
               </p>
             </div>
             <div className="mt-6 flex justify-center">
@@ -235,11 +239,13 @@ export default function AssistantChat() {
                 : "border border-red-200"
             }`}
           >
-            <div className={`w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center ${
-              notification.type === "success"
-                ? "bg-green-100 text-green-600"
-                : "bg-red-100 text-red-600"
-            }`}>
+            <div
+              className={`w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center ${
+                notification.type === "success"
+                  ? "bg-green-100 text-green-600"
+                  : "bg-red-100 text-red-600"
+              }`}
+            >
               {notification.type === "success" ? "✓" : "✕"}
             </div>
             <p className="text-lg font-medium text-gray-900">

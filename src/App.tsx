@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home";
-import AssistantChat from "./features/ai-assistant/presentation/components/AssistantChat";
+import Home from "./ai-assistant/presentation/pages/Home";
+import AssistantChat from "./ai-assistant/presentation/pages/AssistantChat";
 
 export default function App() {
   return (
