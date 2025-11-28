@@ -15,7 +15,7 @@ export const useChatService = () => {
       id: "welcome",
       role: "assistant",
       content:
-        "¡Ve, mirá! Bienvenido a Calima. Soy tu guía experto. ¿Querés saber cómo estn los vientos hoy, dónde comer sancocho o qué museos visitar?",
+        "¡Ve, mirá! Bienvenido a Calima. Soy tu guía experto. ¿Querés saber cómo estan los vientos hoy, dónde comer sancocho o qué museos visitar?",
       timestamp: Date.now(),
     },
   ]);
